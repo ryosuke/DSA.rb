@@ -40,6 +40,10 @@ class DSA
     @tmpfile.unlink
   end
 
+  def getURL
+    return "#{@dsabase}/#{@year}/dsa-#{@dsa_num}.#{@lang}.html"
+  end
+
   def getDate
     return @dsa_date
   end
